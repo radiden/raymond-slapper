@@ -6,15 +6,20 @@
 body {
 	width: 100vw;
 	height: 100vh;
+	background-color: #14161b;
 }
 
 .idiot {
+	text-align: center;
 	display: flex;
 	align-items: center;
 	height: 100vh;
 	width: min-content;
 	margin-left: auto;
 	margin-right: auto;
+	color: #ffffff;
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 300;
 }
 
 .reallystupid {
@@ -25,7 +30,6 @@ body {
 }
 
 #slapcount {
-	text-align: center;
 	width: 100%;
 }
 
