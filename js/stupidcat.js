@@ -1,6 +1,9 @@
 if (typeof localStorage["slapcount"] === "undefined") {
 	localStorage["slapcount"] = 0;
 }
+if (typeof localStorage["cheater"] === "undefined") {
+	localstorage["cheater"] === "false";
+}
 slapcountint = parseInt(localStorage["slapcount"]);
 var slapcountlast = 0;
 var slap = new Audio("audio/slap.mp3");
@@ -26,12 +29,15 @@ function stupidcat() {
 function checkforhax(slapcountlast) {
 	var amusingsecretdiv = document.getElementById("stupidcismalecat");
 	if (slapcountint != slapcountlast++) {
-		amusingsecretdiv.innerHTML = `dirty cheater.`;
+		localStorage["cheater"] === "true"; 
 	}
 }
 
 function checkforfunnysecret(slapcount) {
 	var amusingsecretdiv = document.getElementById("stupidcismalecat");
+	if (cheater === "true") {
+		amusingsecretdiv.innerHTML = `dirty cheater.`;
+	}
 	if (slapcount >= 110000) {
 		amusingsecretdiv.innerHTML = `there is nothing after this line. if you'd like to contribute though, dm me on twitter @rai_nyaa`;
 	}
@@ -80,7 +86,7 @@ function checkforfunnysecret(slapcount) {
 	else if (slapcount >= 1000) {
 		amusingsecretdiv.innerHTML = `i think this is not healthy please stop`;
 	}
-	else if (slapconut === 420) {
+	else if (slapcount === 420) {
 		amusingsecretdiv.innerHTML = `funny weed number`;
 	}
 	else if (slapcount >= 202) {
