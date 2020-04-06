@@ -35,7 +35,7 @@ function checkforhax(slapcountlast) {
 
 function checkforfunnysecret(slapcount) {
 	var amusingsecretdiv = document.getElementById("stupidcismalecat");
-	if (cheater === "true") {
+	if (localStorage["cheater"] === "true") {
 		amusingsecretdiv.innerHTML = `dirty cheater.`;
 	}
 	if (slapcount >= 110000) {
