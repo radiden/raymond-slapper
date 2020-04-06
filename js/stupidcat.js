@@ -2,7 +2,7 @@ if (typeof localStorage["slapcount"] === "undefined") {
 	localStorage["slapcount"] = 0;
 }
 if (typeof localStorage["cheater"] === "undefined") {
-	localstorage["cheater"] === "false";
+	localStorage["cheater"] === "false";
 }
 slapcountint = parseInt(localStorage["slapcount"]);
 var slapcountlast = 0;
