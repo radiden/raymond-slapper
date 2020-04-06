@@ -1,8 +1,8 @@
-if (typeof localStorage["slapcount"] === "undefined") {
+if (!localStorage["slapcount"]) {
 	localStorage["slapcount"] = 0;
 }
-if (typeof localStorage["cheater"] === "undefined") {
-	localStorage["cheater"] === "false";
+if (localStorage["cheater"]) {
+	localStorage.removeItem("cheater");
 }
 slapcountint = parseInt(localStorage["slapcount"]);
 var slapcountlast = 0;
@@ -19,25 +19,14 @@ function updatescore() {
 function stupidcat() {
 	funnyslap();
 	slapcountint++;
-	slap.play();
 	slapcountlast = slapcountint;
+	slap.play();
 	localStorage["slapcount"] = slapcountint;
 	updatescore();
-	checkforhax(slapcountlast);
-}
-
-function checkforhax(slapcountlast) {
-	var amusingsecretdiv = document.getElementById("stupidcismalecat");
-	if (slapcountint != slapcountlast++) {
-		localStorage["cheater"] === "true"; 
-	}
 }
 
 function checkforfunnysecret(slapcount) {
 	var amusingsecretdiv = document.getElementById("stupidcismalecat");
-	if (localStorage["cheater"] === "true") {
-		amusingsecretdiv.innerHTML = `dirty cheater.`;
-	}
 	if (slapcount >= 110000) {
 		amusingsecretdiv.innerHTML = `there is nothing after this line. if you'd like to contribute though, dm me on twitter @rai_nyaa`;
 	}
@@ -114,7 +103,7 @@ function checkforfunnysecret(slapcount) {
 		amusingsecretdiv.innerHTML = `triple slap`;
 	}
 	else if (slapcount === 2) {
-		amusingsecretdiv.innerHTML = `double slap`;
+		amusingsecretdiv.innerHTML = `double slap`;	
 	}
 }
 
