@@ -31,15 +31,57 @@ function checkforhax(slapcountlast) {
 }
 
 function checkforfunnysecret(slapcount) {
-	var amusingsecretdiv = document.getElementById("stupidcismalecat");	
-	if (slapcount >= 10000) {
+	var amusingsecretdiv = document.getElementById("stupidcismalecat");
+	if (slapcount >= 110000) {
+		amusingsecretdiv.innerHTML = `there is nothing after this line. if you'd like to contribute though, dm me on twitter @rai_nyaa`;
+	}
+	else if (slapcount >= 101000) {
+		amusingsecretdiv.innerHTML = `grumm cute`;
+	}
+	else if (slapcount >= 100000) {
+		amusingsecretdiv.innerHTML = `Raymond has been sent to hell, this is merely a figment if your imagination at this point. Will you continue?`;
+	}
+	else if (slapcount >= 50000) {
+		amusingsecretdiv.innerHTML = `epstein didn't kill himself`;
+	}
+	else if (slapcount >= 25000) {
+		amusingsecretdiv.innerHTML = `im concerned`;
+	}
+	else if (slapcount >= 20000) {
+		amusingsecretdiv.innerHTML = `don't you have anything better to do`;
+	}
+	else if (slapcount >= 15100) {
+		amusingsecretdiv.innerHTML = `or have you?`;
+	}
+	else if (slapcount >= 15000) {
+		amusingsecretdiv.innerHTML = `nothing happens after this one. you won.`;
+	}
+	else if (slapcount >= 12000) {
+		amusingsecretdiv.innerHTML = `seriously stop`;
+	}
+	else if (slapcount >= 11000) {
+		amusingsecretdiv.innerHTML = `no seriously stop`;
+	}
+	else if (slapcount >= 10000) {
 		amusingsecretdiv.innerHTML = `please stop`;
+	}
+	else if (slapcount === 8008) {
+		amusingsecretdiv.innerHTML = `haha boob number`;
+	}
+	else if (slapcount >= 5000) {
+		amusingsecretdiv.innerHTML = `shoutouts to simpleflips`;
 	}
 	else if (slapcount >= 2000) {
 		amusingsecretdiv.innerHTML = `i am actually impressed`;
 	}
+	else if (slapcount === 1337) {
+		amusingsecretdiv.innerHTML = `l33t`;
+	}
 	else if (slapcount >= 1000) {
 		amusingsecretdiv.innerHTML = `i think this is not healthy please stop`;
+	}
+	else if (slapconut === 420) {
+		amusingsecretdiv.innerHTML = `funny weed number`;
 	}
 	else if (slapcount >= 202) {
 		amusingsecretdiv.innerHTML = `slap cat`;
@@ -52,6 +94,21 @@ function checkforfunnysecret(slapcount) {
 	}
 	else if (slapcount >= 100) {
 		amusingsecretdiv.innerHTML = `wow, you really do hate raymond. good.`;
+	}
+	else if (slapcount === 69) {
+		amusingsecretdiv.innerHTML = `haha sex number`;	
+	}
+	else if (slapcount >= 5) {
+		amusingsecretdiv.innerHTML = `slapping spree`;
+	}
+	else if (slapcount === 4) {
+		amusingsecretdiv.innerHTML = `quadruple slap`;
+	}
+	else if (slapcount === 3) {
+		amusingsecretdiv.innerHTML = `triple slap`;
+	}
+	else if (slapcount === 2) {
+		amusingsecretdiv.innerHTML = `double slap`;
 	}
 }
 
