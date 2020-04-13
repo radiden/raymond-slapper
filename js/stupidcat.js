@@ -8,8 +8,6 @@ slapcountint = parseInt(localStorage["slapcount"]);
 var slapcountlast = 0;
 var slap = new Audio("audio/slap.mp3");
 
-slap.volume = 0.2;
-
 function updatescore() {
 	var scorediv = document.getElementById("slapcount");
 	scorediv.innerHTML = `<strong>slap count: ${localStorage["slapcount"]}</strong>`; 
@@ -20,7 +18,9 @@ function stupidcat() {
 	funnyslap();
 	slapcountint++;
 	slapcountlast = slapcountint;
-	slap.play();
+	var thisSlap = slap.cloneNode(true);
+	thisSlap.volume = 0.2;
+	thisSlap.play();
 	localStorage["slapcount"] = slapcountint;
 	updatescore();
 }
