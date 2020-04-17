@@ -23,10 +23,10 @@ function maybestupidcat(e) {
 
 	for (let i=0; i < touchEvent.touches.length; i++) {
 		let touch = touchEvent.touches[i];
-		if (touches[i] === undefined) {
-			touches[i] = false;
-		}
 		let over = stupid == document.elementFromPoint(touch.clientX, touch.clientY);
+		if (touches[i] === undefined) {
+			touches[i] = over;
+		}
 
 		if (over != touches[i]) {
 			if (over) {
