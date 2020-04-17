@@ -38,6 +38,10 @@ function maybestupidcat(e) {
 
 	}
 }
+
+function cleartouches() {
+	touches = {};
+}
 function stupidcat() {
 	funnyslap();
 	slapcountint++;
