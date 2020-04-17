@@ -14,6 +14,30 @@ function updatescore() {
 	checkforfunnysecret(slapcountint);
 }
 
+let touches = {};
+
+function maybestupidcat(e) {
+	const stupid = document.querySelector("#stupidcat");
+	/** @type {TouchEvent} */
+	let touchEvent = e;
+
+	for (let i=0; i < touchEvent.touches.length; i++) {
+		let touch = touchEvent.touches[i];
+		if (touches[i] === undefined) {
+			touches[i] = false;
+		}
+		let over = stupid == document.elementFromPoint(touch.clientX, touch.clientY);
+
+		if (over != touches[i]) {
+			if (over) {
+				stupidcat();
+			}
+
+			touches[i] = over;
+		}
+
+	}
+}
 function stupidcat() {
 	funnyslap();
 	slapcountint++;
