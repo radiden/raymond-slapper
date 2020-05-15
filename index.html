@@ -9,13 +9,13 @@
 		<meta charset="utf-8">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
-	<body onload="updatescore()">
+	<body onload="updatescore()" ontouchmove="maybestupidcat(event)"  ontouchend="cleartouches()">
 		<div class="idiot">
 			<div class="reallystupid">
 				<div id="stupidcismalecat"></div>
 				<div id="slapcount"></div>
 				<div class="containsstupidcat">
-					<img id="stupidcat" src="img/stupidcat.png" onclick="stupidcat()"></img>
+				<img id="stupidcat" src="img/stupidcat.png" onmouseenter="stupidmouse()" onclick="stupidcat()"></img>
 				</div>
 			</div>
 		</div>

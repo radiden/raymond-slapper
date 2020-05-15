@@ -14,7 +14,51 @@ function updatescore() {
 	checkforfunnysecret(slapcountint);
 }
 
+
+// audio won't play until a proper click or touch occurs :(
+	
+let slapped = false;
+let touches = {};
+
+function maybestupidcat(e) {
+	touchUsed = true;
+	if (!slapped)
+		return;
+
+	const stupid = document.querySelector("#stupidcat");
+	/** @type {TouchEvent} */
+	let touchEvent = e;
+
+	for (let i=0; i < touchEvent.touches.length; i++) {
+		let touch = touchEvent.touches[i];
+		let over = stupid == document.elementFromPoint(touch.clientX, touch.clientY);
+		if (touches[i] === undefined) {
+			touches[i] = over;
+		}
+
+		if (over != touches[i]) {
+			if (over) {
+				stupidcat();
+			}
+
+			touches[i] = over;
+		}
+
+	}
+}
+
+
+function cleartouches() {
+	touches = {};
+}
+
+function stupidmouse() {
+	if (!slapped)
+		return;
+	stupidcat();
+}
 function stupidcat() {
+	slapped = true;
 	funnyslap();
 	slapcountint++;
 	slapcountlast = slapcountint;
